@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ministry App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="screen active" id="loginScreen">
+            <h1>Login</h1>
+            <input type="text" id="email" placeholder="Email">
+            <input type="password" id="password" placeholder="Password">
+            <button onclick="login()">Login</button>
+            <button onclick="showSignUp()">Sign Up</button>
+        </div>
+        <div class="screen" id="signUpScreen">
+            <h1>Sign Up</h1>
+            <input type="text" id="newEmail" placeholder="Email">
+            <input type="password" id="newPassword" placeholder="Password">
+            <button onclick="signUp()">Sign Up</button>
+            <button onclick="showLogin()">Back to Login</button>
+        </div>
+    </div>
+    <script src="app.js" type="module"></script>
+</body>
+</html>
